@@ -45,7 +45,7 @@ id_cliente int,
 constraint id_cliente foreign key (id_cliente) references cliente (id_cliente)
 );
 
-create table if not exists asocia (
+create table if not exists tarjeta (
 id_tarjeta int auto_increment,
 numero int,
 codigo smallint,
