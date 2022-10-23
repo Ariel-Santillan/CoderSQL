@@ -3,7 +3,7 @@ create schema if not exists proyecto_final;
 use proyecto_final;
 
 create table if not exists banco (
-id_banco int AUTO_INCREMENT,
+id_banco int not null AUTO_INCREMENT,
 nombre varchar (100),
 direccion varchar (150),
 PRIMARY KEY (id_banco)
@@ -20,9 +20,7 @@ constraint id_banco FOREIGN KEY (id_banco) REFERENCES banco(id_banco)
 create table if not exists empleado (
 id_empleado int AUTO_INCREMENT,
 nombre_apellido varchar (150),
-id_sucursal int,
-PRIMARY KEY (id_empleado),
-constraint id_sucursal FOREIGN KEY (id_sucursal) REFERENCES sucursal(id_sucursal)
+PRIMARY KEY (id_empleado)
 );
 
 create table if not exists sucursal_empleado (
@@ -37,7 +35,7 @@ PRIMARY KEY (id_sucursal_empleado)
 create table if not exists cliente (
 id_cliente int auto_increment,
 nombre varchar (150),
-nro_cuenta int,
+nro_cuenta varchar (100),
 primary key (id_cliente)
 );
 
@@ -51,7 +49,7 @@ constraint id_sucursal_cuenta foreign key (id_sucursal_cuenta) references sucurs
 
 create table if not exists tarjeta (
 id_tarjeta int auto_increment,
-numero int,
+numero varchar (100),
 codigo smallint,
 fecha_vencimiento date,
 id_cuenta int,
