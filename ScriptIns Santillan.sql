@@ -87,7 +87,7 @@ insert into transaccion values (null, '2022-02-09', '3548702810226187', 4300.21,
 insert into transaccion values (null, '2021-11-27', '3582444736433780', 1000, '5100145636720352');
 insert into transaccion values (null, '2022-07-26', '30560630617709', 3462.58, '374288881511561');
 insert into transaccion values (null, '2022-06-14', '3541464675567331', 1867.12, '3544762838086991');
-insert into transaccion values (null, '2022-07-10', '3582444736433780', 1868, '3555282760882883');
+insert into transaccion values (null, '2022-07-10', '5602245204021652061', 1868, '3555282760882883');
 insert into transaccion values (null, '2021-11-29', '3589967492596229', 1687.21, '5007669839267089');
 
 insert into transferencia values (null, 1);
@@ -96,3 +96,22 @@ insert into transferencia values (null, 3);
 insert into transferencia values (null, 4);
 insert into transferencia values (null, 5);
 insert into transferencia values (null, 6);
+
+insert into sucursal_empleado values (null, 1, 9);
+insert into sucursal_empleado values (null, 2, 4);
+insert into sucursal_empleado values (null, 3, 6);
+insert into sucursal_empleado values (null, 4, 5);
+insert into sucursal_empleado values (null, 5, 1);
+insert into sucursal_empleado values (null, 6, 2);
+insert into sucursal_empleado values (null, 7, 3);
+insert into sucursal_empleado values (null, 8, 5);
+insert into sucursal_empleado values (null, 9, 10);
+insert into sucursal_empleado values (null, 10, 8);
+
+
+insert into cliente_operacion_transaccion values (null, 1, 1, 1);
+insert into cliente_operacion_transaccion values (null, 6, 2, 2);
+insert into cliente_operacion_transaccion values (null, 19, 3, 3);
+insert into cliente_operacion_transaccion values (null, 3, 4, 4);
+insert into cliente_operacion_transaccion values (null, 14, 5, 5);
+insert into cliente_operacion_transaccion values (null, 12, 3, 6);
