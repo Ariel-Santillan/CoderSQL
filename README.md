@@ -8,3 +8,5 @@ Primera Entrega del Proyecto Final
 [Inserción de datos](https://github.com/Ariel-Santillan/CoderSQL/blob/main/ScriptIns%20Santillan.sql)
 
 [Creación de vistas](https://github.com/Ariel-Santillan/CoderSQL/blob/main/ScriptVis%20Santillan.sql)
+
+[Creación de funciones](https://github.com/Ariel-Santillan/CoderSQL/blob/main/Funciones%20Santillan.sql)
