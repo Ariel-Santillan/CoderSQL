@@ -27,11 +27,12 @@ set @orderByTipo = 'asc';
 -- Ejecutar SP
 call sp_ordenamiento (@nombreTabla, @campoOrderBy, @orderByTipo);
 
+use proyecto_final;
+
 drop procedure if exists sp_agregarEliminarBanco;
 
 delimiter $$
 create procedure sp_agregarEliminarBanco (	in agregarOEliminar varchar (20),
-											in nombreTabla varchar (30),
 											in agregarNombre varchar (100),
                                             in agregarDireccion varchar (150),
                                             in eliminarID int
@@ -42,10 +43,10 @@ begin
 -- Si el valor del parámetro ingresado es insert
 IF agregarOEliminar = 'Insert' THEN
 -- Generamos la query para insert
-set @agregarEliminar = CONCAT ('INSERT INTO ', nombreTabla,' VALUES (NULL, ', agregarNombre, ', ', agregarDireccion, ')');
+set @agregarEliminar = CONCAT ('INSERT INTO BANCO VALUES (NULL, ', agregarNombre, ', ', agregarDireccion, ')');
 -- Si no generamos la query para delete por id
 ELSE
-set @agregarEliminar = CONCAT ('delete from ', nombreTabla,'  where id_banco = ', eliminarID );
+set @agregarEliminar = CONCAT ('delete from BANCO where id_banco = ', eliminarID );
 
 END IF;
 -- Precompila string con query completa
