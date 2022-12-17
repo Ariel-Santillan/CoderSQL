@@ -59,7 +59,7 @@ fecha date, -- Fecha en la que se realizó el cambio
 hora time -- Hora en la que se realizó el cambio
 );
 
-drop trigger if exists trg_log_cliente_insert;
+drop trigger if exists trg_log_transaccion_insert;
 
 -- Crear Trigger de Insert
 delimiter //
